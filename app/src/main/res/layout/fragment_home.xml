@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout style="@style/HomeFragmentContainer">
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/home_video"
+            style="@style/HomeFragmentLinearLayout"
+            app:backColor="@color/colorPrimary"
+            app:backColorPress="@color/colorPrimaryDarker"
+            app:iconColor="@color/White"
+            app:iconRes="@string/video"
+            app:iconSize="36sp"
+            app:text="视频通话"
+            app:textColor="@color/White"
+            app:textSize="18sp" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/home_voice"
+            style="@style/HomeFragmentLinearLayout"
+            app:backColor="@color/msRed"
+            app:backColorPress="@color/msRedDark"
+            app:iconColor="@color/White"
+            app:iconRes="@string/voice"
+            app:iconSize="36sp"
+            app:text="语音通话"
+            app:textColor="@color/White"
+            app:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/HomeFragmentContainer">
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/home_params"
+            style="@style/HomeFragmentLinearLayout"
+            app:backColor="@color/msGreen"
+            app:backColorPress="@color/msGreenDark"
+            app:iconColor="@color/White"
+            app:iconRes="@string/params"
+            app:iconSize="36sp"
+            app:text="生理参数"
+            app:textColor="@color/White"
+            app:textSize="18sp" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/home_user"
+            style="@style/HomeFragmentLinearLayout"
+            app:backColor="@color/msYellow"
+            app:backColorPress="@color/msYellowDark"
+            app:iconColor="@color/White"
+            app:iconRes="@string/userCenter"
+            app:iconSize="36sp"
+            app:text="个人中心"
+            app:textColor="@color/White"
+            app:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/HomeFragmentContainer">
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/home_capture"
+            style="@style/HomeFragmentLinearLayout"
+            app:backColor="@color/msPurple"
+            app:backColorPress="@color/msPurpleDark"
+            app:iconColor="@color/White"
+            app:iconRes="@string/videotape"
+            app:iconSize="36sp"
+            app:text="录像管理"
+            app:textColor="@color/White"
+            app:textSize="18sp" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/home_about"
+            style="@style/HomeFragmentLinearLayout"
+            app:backColor="@color/DarkGray"
+            app:backColorPress="@color/DarkerGray"
+            app:iconColor="@color/White"
+            app:iconRes="@string/team"
+            app:iconSize="36sp"
+            app:text="关于我们"
+            app:textColor="@color/White"
+            app:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
+

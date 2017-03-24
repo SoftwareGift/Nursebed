@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bendian.nursingbed.view.sliding.DragLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dragLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_left_menu" />
+
+    <com.bendian.nursingbed.view.sliding.CustomRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/include_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true" />
+
+        <com.bendian.nursingbed.view.CustomViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tab"
+            android:layout_below="@+id/toolbar_include" />
+
+        <com.bendian.nursingbed.view.trip.PagerBottomTabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </com.bendian.nursingbed.view.sliding.CustomRelativeLayout>
+</com.bendian.nursingbed.view.sliding.DragLayout>

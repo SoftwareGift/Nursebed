@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/ift_voice"
+            style="@style/MenuItemStyle"
+            app:iconColor="@color/secondaryText"
+            app:iconRes="@string/voice_"
+            app:text="麦克风(关)" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/ift_loudSpeaker"
+            style="@style/MenuItemStyle"
+            app:iconColor="@color/secondaryText"
+            app:iconRes="@string/loudSpeaker_"
+            app:text="扬声器(关)" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/ift_cameraDevice"
+            style="@style/MenuItemStyle"
+            app:iconColor="@color/secondaryText"
+            app:iconRes="@string/cameraDevice_"
+            app:text="摄像头(关)" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            android:id="@+id/ift_switchCamera"
+            style="@style/MenuItemStyle"
+            app:iconColor="@color/secondaryText"
+            app:iconRes="@string/switchCamera_"
+            app:text="切换(前置)" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0.6"
+        android:background="@color/Gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            style="@style/MenuItemStyle"
+            app:iconColor="@color/secondaryText"
+            app:iconRes="@string/netWork"
+            app:text="网络助手" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            style="@style/MenuItemStyle"
+            app:iconColor="@color/secondaryText"
+            app:iconRes="@string/setting"
+            app:text="设置" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            style="@style/MenuItemStyle"
+            app:iconColor="@color/secondaryText"
+            app:iconRes="@string/share"
+            app:text="分享" />
+
+        <com.bendian.nursingbed.view.IconFontTextItem
+            style="@style/MenuItemStyle"
+            app:iconColor="@color/secondaryText"
+            app:iconRes="@string/exist"
+            app:text="退出" />
+    </LinearLayout>
+
+    <com.bendian.nursingbed.view.IconTextView
+        android:id="@+id/cancelView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:text="&#xe640;"
+        android:textColor="@color/secondaryText"
+        android:textSize="22sp"
+        app:backColor="#FAFFFFFF"
+        app:backColorPress="#DDDDDD" />
+</LinearLayout>

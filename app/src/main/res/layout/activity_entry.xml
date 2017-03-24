@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_above="@+id/ll_input"
+        android:layout_marginBottom="32dp"
+        android:text="护理助手"/>
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="用户名"
+            android:inputType="text"
+            android:text="test"
+            android:textColorHint="@color/Gray"
+            android:gravity="center"
+            android:background="@drawable/circle_bk_white"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:inputType="numberPassword"
+            android:hint="密　码"
+            android:text="test"
+            android:textColorHint="@color/Gray"
+            android:gravity="center"
+            android:background="@drawable/circle_bk_white"/>
+
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_NanChang"
+            android:text="南昌"
+            android:checked="true"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_NanJing"
+            android:text="南京"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textColor="@color/White"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+    <TextView
+        android:clickable="true"
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/radioGroup"
+        android:text="登　录"
+        android:gravity="center"
+        android:textColor="@color/DarkGray"
+        android:textSize="18sp"
+        android:background="@drawable/btn_selector_white"/>
+
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/image"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+</RelativeLayout>

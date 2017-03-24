@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="string" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="iconRes" format="reference|integer"/>
+    <attr name="iconColor" format="color"/>
+    <attr name="iconSize" format="dimension"/>
+    <attr name="iconText" format="string"/>
+    <attr name="backColor" format="reference|color"/>
+    <attr name="backColorPress" format="reference|color"/>
+
+    <declare-styleable name="ImageTextItem">
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="iconRes"/>
+        <attr name="iconColor"/>
+    </declare-styleable>
+    <declare-styleable name="IconFontTextItem">
+        <attr name="backColor"/>
+        <attr name="backColorPress"/>
+        <attr name="text" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="iconRes"/>
+        <attr name="iconColor"/>
+        <attr name="iconSize"/>
+        <attr name="iconText"/>
+    </declare-styleable>
+
+    <declare-styleable name="IconTextView">
+        <attr name="backColor"/>
+        <attr name="backColorPress"/>
+    </declare-styleable>
+</resources>

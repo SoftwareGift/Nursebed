@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">护理助手-beta</string>
+    <string name="setting">&#xe634;</string>
+    <string name="paramManager">&#xe62e;</string>
+    <string name="empty"/>
+    <string name="video">&#xe606;</string>
+    <string name="voice">&#xe61d;</string>
+    <string name="params">&#xe62d;</string>
+    <string name="userCenter">&#xe612;</string>
+    <string name="videotape">&#xe61e;</string>
+    <string name="team">&#xe635;</string>
+    <string name="loudSpeaker">&#xe63d;</string>
+    <string name="switchCamera">&#xe601;</string>
+    <string name="cameraDevice">&#xe615;</string>
+
+    <string name="voice_">&#xe643;</string>
+    <string name="loudSpeaker_">&#xe646;</string>
+    <string name="switchCamera_">&#xe644;</string>
+    <string name="cameraDevice_">&#xe645;</string>
+
+    <string name="menu">&#xe63e;</string>
+
+    <string name="share">&#xe641;</string>
+    <string name="exist">&#xe647;</string>
+    <string name="netWork">&#xe648;</string>
+
+    <string name="msg_logout">您的账号在别处登录，被迫下线！</string>
+    <string name="appid">8aaf070857f4daef0157f61365370234</string>
+    <string name="apptocken">29abce51fe6126b134cc97b146ef9c6a</string>
+    <string name="city">City</string>
+    <string name="nanChang">南昌</string>
+    <string name="nanchang">NanChang</string>
+    <string name="nanjing">NanJing</string>
+    <string name="actionCode">actionCode</string>
+    <string name="positive">确定</string>
+</resources>

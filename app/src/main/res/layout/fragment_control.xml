@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/views"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/DarkGray">
+        <!-- 此处存放显示视频的SurfaceView，为提高程序性能，通过代码动态生成，
+            详见ControlFragment -->
+        <!--<com.yuntongxun.ecsdk.voip.video.ECCaptureView
+            android:visibility="gone"
+            android:id="@+id/captureView_target"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <com.yuntongxun.ecsdk.voip.video.ECCaptureView
+            android:visibility="gone"
+            android:id="@+id/captureView_local"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />-->
+    </RelativeLayout>
+
+    <com.bendian.nursingbed.view.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/views">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_switch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.kyleduo.switchbutton.SwitchButton
+                            android:id="@+id/switchBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:kswTintColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="开关"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_up"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe620;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="抬背"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_reset"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe61f;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="复位"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe622;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="左翻身"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_stop"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe625;"
+                            android:textColor="@color/Red"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="停止"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe623;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="右翻身"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_qu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe607;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="曲腿"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_down"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe621;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="降背"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_ping"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe607;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="平腿"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_open"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe624;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="便开"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_close"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="&#xe624;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="便关"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_auto"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector_control"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.bendian.nursingbed.view.IconTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:text="&#xe627;"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="定时护理"
+                            android:textColor="@color/DarkGray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.bendian.nursingbed.view.CustomScrollView>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorPrimaryDarker">#0095E0</color>
+    <color name="colorAccent">#F57096</color>
+
+    <color name="DarkGray">#383B46</color>
+    <color name="Green">#42BA5A</color>
+    <color name="Red">#FF3020</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Gray">#CDCDCD</color>
+    <color name="lightGray">#FCFCFC</color>
+
+    <color name="msRed">#F65314</color>
+    <color name="msGreen">#7CBB00</color>
+    <color name="msBlue">#00A1F1</color>
+    <color name="msYellow">#FFBB00</color>
+    <color name="msPurple">#69227B</color>
+
+    <color name="msRedDark">#E64304</color>
+    <color name="msGreenDark">#6CAB00</color>
+    <color name="msBlueDark">#0091E1</color>
+    <color name="msYellowDark">#eFaB00</color>
+    <color name="msPurpleDark">#59126B</color>
+    <color name="DarkerGray">#282B36</color>
+
+    <color name="line">#e5e5e5</color>
+    <color name="secondaryText">#727272</color>
+    <color name="primaryText">#212121</color>
+
+    <color name="whiteBtn_click">#99cdcdcd</color>
+
+</resources>

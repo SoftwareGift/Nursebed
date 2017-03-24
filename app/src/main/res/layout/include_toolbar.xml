@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/colorPrimary">
+    <com.bendian.nursingbed.view.IconTextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/toolbarMenu"
+        android:text="&#xe632;"
+        android:textColor="@color/White"
+        android:textSize="22sp"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+    <TextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/White"
+        android:text="首页"/>
+    <com.bendian.nursingbed.view.IconTextView
+        android:id="@+id/toolbarItem2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/White"
+        android:textSize="22sp"
+        android:layout_width="48dp"
+        android:layout_height="56dp" />
+    <com.bendian.nursingbed.view.IconTextView
+        android:id="@+id/toolbarItem1"
+        android:layout_toLeftOf="@+id/toolbarItem2"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/White"
+        android:textSize="22sp"
+        android:layout_width="48dp"
+        android:layout_height="56dp" />
+</RelativeLayout>
